@@ -1,5 +1,11 @@
-console.log("First Program");
-
-let tempVar: number = 20;
-
-// open the terminal ==> run ==> tsc index.ts
+let employee: {
+  id: number;
+  name: string;
+  retire: (date: Date) => void;
+} = {
+  id: 1,
+  name: "Ashen",
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
